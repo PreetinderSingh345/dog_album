@@ -1,0 +1,226 @@
+/* body */
+
+body{
+    
+    height: 97vh;      
+    display: flex;  
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: sans-serif;
+    background-image: linear-gradient(to bottom, #90ee903b, rgb(212, 244, 255), #90ee903b);
+    border-radius: 30px;    
+    box-shadow: 0 0 6px 6px rgb(125, 240, 215);    
+    min-width: 300px;
+    min-height: 500px;
+
+}
+
+/* heading */
+
+#heading{
+
+    font-size: 2rem;
+    font-weight: bold;
+    color: darkcyan;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+/* breed fetch container */
+
+#breed-fetch-container{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    background-color: rgb(189, 228, 252);
+
+}
+
+/* breeds label list container */
+
+#breeds-label-list-container{
+    
+    width: 225px;    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* breeds label */
+
+#breeds-label{
+        
+    color: rgb(0, 124, 128);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 5px;
+
+}
+
+/* breed list */
+
+#breed-list{
+    
+    height: 30px;   
+    font-size: 1rem;
+    color: rgb(5, 104, 170);    
+    border: none;
+    outline: none;
+    border: 2px outset darkslategray;
+    border-radius: 20px;    
+    background-color: rgb(210, 244, 255);
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    padding-left: 5px;
+
+}
+
+#breed-list:hover{
+    box-shadow: 0 0 4px 4px rgb(98, 182, 235);
+}
+
+/* fetch button */
+
+#fetch-btn{
+
+    height: 30px;
+    width: 225px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: rgb(0, 124, 128);
+    border: 2px outset darkslategray;    
+    border-radius: 20px;
+    background-color: rgb(210, 244, 255);
+    cursor: pointer;
+    outline: none;
+    transition: box-shadow 0.3s ease-in-out;
+
+}
+
+#fetch-btn:hover{
+    box-shadow: 0 0 4px 4px rgb(98, 182, 235);
+}
+
+/* bone icon */
+
+#bone{
+    margin-right: 5px;
+}
+
+/* adjusting the elements of breed fetch container */
+
+@media only screen and (max-width: 470px){
+
+    body #breeds-label-list-container{
+
+        width: 90%;
+        margin-bottom: 10px;
+
+    }
+
+    body #breed-list{
+        width: 75%;
+    }
+
+    body #fetch-btn{
+        width: 90%;
+    }
+
+}
+
+/* dog button container */
+
+#dog-btn-container{
+           
+    display: flex;
+    flex-direction: column;    
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+/* left right container */
+
+#left-right-container{
+   
+    margin-bottom: 10px;
+    border-radius: 20px;
+    padding: 0 5px;
+    background-color: darkslategray;
+
+}
+
+/* dog image */
+
+#dog-img{
+
+    height: 300px;        
+    max-width: 80%;
+    border: 4px solid darkslategrey;
+    border-radius: 20px;  
+    box-shadow: 0 0 6px 6px gold; 
+
+}
+
+/* previous button */
+
+#prev-btn{
+    
+    color: rgb(43, 198, 226);
+    font-size: 2rem;
+    cursor: pointer;
+    margin-right: 5px;
+
+}
+
+/* dog icon */
+
+#dog{
+
+    font-size: 2rem;    
+    color: silver;
+    margin: 5px;
+
+}
+
+/* next button */
+
+#next-btn{
+    
+    color: rgb(43, 198, 226);
+    font-size: 2rem;
+    cursor: pointer;
+    margin-left: 5px;
+
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar{ 
+    
+    height: 10px;
+    width: 10px;    
+
+}
+
+::-webkit-scrollbar-track{
+    background-color: lightgray;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: grey;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: darkslategray;
+}

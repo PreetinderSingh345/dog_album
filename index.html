@@ -1,0 +1,84 @@
+<html>
+    <head>
+
+        <title>Dog Album</title>
+
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <!-- above is the link to the external stylesheet -->
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+        <!-- above is the link to use font-awesome CDN -->
+
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <!-- meta tag for adjusting the content according to the device width -->
+
+    </head>
+
+    <body>
+
+        <!-- heading -->
+
+        <div id="heading">
+
+            <i class="fas fa-paw" id="paw"></i>
+            <span>dog album</span>                     
+
+        </div>
+
+        <!-- breed fetch container -->
+
+        <div id="breed-fetch-container">        
+
+            <!-- breeds label list container -->
+
+            <div id="breeds-label-list-container">
+
+                <!-- breeds label -->
+
+                <label id="breeds-label" for="breed-list">Breed</label>
+
+                <!-- breed list(options will be fetched via api) -->
+
+                <select name="breeds" id="breed-list">            
+                </select>
+                
+            </div>
+
+            <!-- fetch button -->
+            
+            <button id="fetch-btn">
+
+                <i class="fas fa-bone" id="bone"></i>
+                <span>fetch</span>
+
+            </button>
+
+        </div>
+
+        <!-- dog button container -->
+
+        <div id="dog-btn-container">
+
+            <!-- left right container -->
+
+            <div id="left-right-container">
+
+                <!-- previous, dog and next icons -->
+
+                <i id="prev-btn" class="fas fa-angle-double-left"></i>
+                <i id="dog" class="fas fa-dog"></i>
+                <i id="next-btn" class="fas fa-angle-double-right"></i>
+
+            </div>
+
+            <!-- dog image -->
+
+            <img id="dog-img" alt="a dog image">            
+
+        </div>
+
+        <script type="text/javascript" src="./script.js"></script>
+        <!-- above is the link to the external js file -->
+
+    </body>
+</html>
